@@ -2,38 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balloon</title>
     <style>
       .balloon {
         width: 200px;
         height: 200px;
         background-color: red;
-
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         margin: auto;
-
         max-width: 100%;
         max-height: 100%;
         overflow: auto;
-
         border-radius: 100px;
       }
     </style>
   </head>
+
   <body>
     <div class="balloon"></div>
 
-    <script type="text/javascript">
+    <script>
       document
         .querySelector(".balloon")
         .addEventListener("click", function (event) {
           var balloon = this;
 
-          // Size
           var size =
             parseInt(
               window.getComputedStyle(balloon).getPropertyValue("width")
@@ -49,6 +48,7 @@
             .getComputedStyle(balloon)
             .getPropertyValue("background-color");
           var newColor;
+
           if (currentColor === "rgb(255, 0, 0)")
             // red
             newColor = "green";
@@ -56,6 +56,7 @@
             // green
             newColor = "blue";
           else newColor = "red";
+
           balloon.style.backgroundColor = newColor;
         });
 
@@ -80,13 +81,14 @@
             .getComputedStyle(balloon)
             .getPropertyValue("background-color");
           var newColor;
+
           if (currentColor === "rgb(255, 0, 0)")
             // red
-            newColor = "blue";
+            newColor = "green";
           else if (currentColor === "rgb(0, 128, 0)")
             // green
-            newColor = "red";
-          else newColor = "green";
+            newColor = "blue";
+          else newColor = "red";
           balloon.style.backgroundColor = newColor;
         });
     </script>
