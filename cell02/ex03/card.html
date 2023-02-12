@@ -4,33 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
-    <link rel="stylesheet" type="text/css" href="./card.css" />
+    <title>Card</title>
+    <link rel="stylesheet" href="card.css" />
   </head>
   <body>
-    <div class="card">
-      <img
-        src="https://scontent.fbkk7-3.fna.fbcdn.net/v/t1.15752-9/323362018_501206162157180_6157985256050645808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE6t5mLNepXlRihPaqihYBIURlrm7JHFYhRGWubskcViHkG6PKRMJFdZxkkT6EMkrlJ1IbAIG3OCPWMFrhHOtOd&_nc_ohc=PZuJcMLSGTAAX-tnVvW&_nc_ht=scontent.fbkk7-3.fna&oh=03_AdSP-hGoawyB7WtMN7CUxl19nUNVNCWwkgsOb5d7mJk9JQ&oe=640BD9B4"
-        alt="my-image"
-        style="width: 100%"
-      />
-      <h1>Khris Bharmmano</h1>
-      <p class="title">Computer Engineering , Web Developer</p>
-      <p>King Mongkut's Institute of Technology Ladkrabang</p>
-      <a href="https://www.facebook.com/khris.bharmmano/"
-        ><i class="fa fa-facebook"></i
-      ></a>
-      <a href="https://www.instagram.com/khris_xp/?next=%2F"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a href="https://github.com/khris-xp"
-        ><i class="fa-brands fa-github"></i
-      ></a>
-      <p><button>Contact</button></p>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/119d8665c4.js"
-      crossorigin="anonymous"
-    ></script>
+    <table class="center">
+      <thead>
+        <tr>
+          <th colspan="2">User Profile Card</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="body">
+          <td>
+            <img
+              src="https://scontent.fbkk29-7.fna.fbcdn.net/v/t1.15752-9/323362018_501206162157180_6157985256050645808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE6t5mLNepXlRihPaqihYBIURlrm7JHFYhRGWubskcViHkG6PKRMJFdZxkkT6EMkrlJ1IbAIG3OCPWMFrhHOtOd&_nc_ohc=XpZIYCfV9bEAX-tTQkc&tn=KwawRqOcPRxJi-74&_nc_ht=scontent.fbkk29-7.fna&oh=03_AdRP_zwmZn0CPsYFhlHaKLQ15aRs2-PG3r0xW222uO-JNw&oe=64100674"
+              alt=""
+              style="width: 220px"
+            />
+          </td>
+        </tr>
+        <tr class="body">
+          <td class="user">kbharmma</td>
+        </tr>
+        <tr class="body">
+          <td class="description">Computer Engineering, Web Developer</td>
+        </tr>
+        <tr class="body">
+          <td>King Mongkut's Institute of Technology Ladkrabang</td>
+        </tr>
+        <tr class="body">
+          <td class="icons">
+            <a href="https://github.com/khris-xp">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+                height="20px"
+                width="20px"
+            /></a>
+            <a href="https://www.facebook.com/khris.bharmmano">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png"
+                height="20px"
+                width="20px"
+              />
+            </a>
+            <a href="https://www.instagram.com/khris_xp/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/3670/3670274.png"
+                height="20px"
+                width="20px"
+            /></a>
+          </td>
+        </tr>
+        <tr class="body">
+          <td class="contact" style="background-color: black">
+            <a href="https://www.youtube.com/watch?v=EzgbqX5STxs">Contact</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
