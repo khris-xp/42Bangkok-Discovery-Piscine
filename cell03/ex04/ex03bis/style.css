@@ -1,0 +1,58 @@
+:root {
+  --white: #e8eae3;
+  --black: #373833;
+  --red: #fa2742;
+}
+
+body {
+  font-family: "Helvetica Neue";
+  background-color: var(--white);
+  color: var(--black);
+  margin: 0;
+}
+
+button {
+  font-family: "Helvetica Neue";
+  background-color: var(--white);
+  color: var(--black);
+  width: 6vh;
+  height: 3vh;
+  outline: none;
+  font-size: 2vh;
+  border: none;
+}
+
+button:active {
+  background-color: #f2f5ec;
+}
+
+h1 {
+  font-size: 5vh;
+  color: var(--black);
+  margin-bottom: 0;
+}
+
+hr {
+  width: 60vw;
+}
+
+#ft_list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: start;
+  height: 99vh;
+  width: auto;
+}
+
+#todo {
+  margin-top: 2vh;
+  font-family: Georgia;
+}
+
+.todo {
+  font-size: 3vh;
+  padding: 0.5vh;
+}
