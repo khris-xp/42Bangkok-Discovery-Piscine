@@ -55,7 +55,7 @@ function addListItem(id, text) {
 }
 
 function deleteItem(id) {
-  if (confirm("¿Quieres borrarlo?")) {
+  if (confirm("Are you sure you want to deleted?")) {
     document.getElementById(id).style.display = "none";
     unsetCookie(id);
   }
